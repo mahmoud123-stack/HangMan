@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/norm.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/HangMan.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Hang_Man</title>
+</head>
+
+<!--      بسم الله الرحمن الرحيم      -->
+
+<body>
+    <div class="container">
+        <!--  Game Explain Info -->
+        <div class="game-info">
+            <div class="game-name">HungMan</div>
+            <div class="category">
+                Word From => <span></span>
+            </div>
+        </div>
+        <!-- End Game Explain Info -->
+        <hr>
+        <!-- Start Game Drawing -->
+        <div class="row">
+            <div class="HangManDraw">
+                <div class="theDraw">
+                    <div class="theStand"></div>
+                    <div class="theHang"></div>
+                    <div class="theRope"></div>
+                    <div class="theMan">
+                        <div class="Head"></div>
+                        <div class="Body"></div>
+                        <div class="Hands"></div>
+                        <div class="Legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+        </div>
+        <hr>
+        <div class="letterGuess"></div>
+        <!-- end Game Drawing -->
+        <audio src="./Sounds/Success.mp3" id="success" preload="auto"></audio>
+        <audio src="./Sounds/Fail.mp3" id="fail" preload="auto"></audio>
+    </div>
+    <script src="JS/HangMan.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"></script>
+</body>
+
+</html>
